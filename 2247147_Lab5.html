@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html>
-    
 <!--use this link to view as webpage: https://htmlpreview.github.io/?https://github.com/nivgokul/WSD_Lab5/blob/main/2247147_Lab5.html-->
-    
+<html>
+
 <head>
 <title>Find a Book</title>
 <link type="text/css" rel="stylesheet" href="style1.css">
@@ -19,10 +18,9 @@
 <video src="library.ogg" height="200" controls="controls" autoplay="true" loop></video> <!--video to be played, autoplay is switched on-->
 </div>
 
-
 <h3> Contact Us!</h3>
 
-<form onsubmit=validate()>
+<form onsubmit="validate()">
     <p>
         First Name:
     <input type="text" id="fname" required placeholder="fname" onfocusout="validate_fname()"/>
@@ -39,7 +37,7 @@
     </p>
 
     <p>
-        Email ID:
+        Official Email ID:
     <input type="text" id="email" required placeholder="email" onfocusout="validate_email()"/> 
     </p>
 
@@ -111,7 +109,7 @@ function validate_password(){
     var passwordResult = passwordRGEX.test(password);
 
     if(!passwordResult) {
-alert("you must have one lowercase alphabet, one uppercase alphabet, one number, and one special character. also, your password must be atleast 8 characters long.");
+alert("you must have one lowercase alphabet, one uppercase alphabet, one number, and one special character.");
 }
 }
 
